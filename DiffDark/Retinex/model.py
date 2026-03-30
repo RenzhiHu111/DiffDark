@@ -233,7 +233,7 @@ class RelightNet(nn.Module):
 
         self.conv5_1 = Conv2D(filters * 4, filters * 8)
         self.conv5_2 = Conv2D(filters * 8, filters * 8)
-        # self.my1 = MyAttention(in_channels=filters * 8)
+        self.my1 = MyAttention(in_channels=filters * 8)
 
         self.upv6 = ConvTranspose2D(filters * 8, filters * 4)
         self.concat6 = Concat()
