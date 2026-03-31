@@ -53,7 +53,7 @@ def train(model):
                 lr=lr,
                 vis_dir=args.vis_dir,
                 ckpt_dir=args.ckpt_dir,
-                eval_every_epoch=10,
+                eval_every_epoch=0,
                 train_phase="Decom")
 
     model.train(train_low_data_names,
